@@ -1,0 +1,118 @@
+.contenedor-info, .form-editar{
+	width:35%;
+	min-width:300px;
+	height:auto;
+	margin:0px auto;
+	margin-top:5%;
+	padding:10px;
+	padding-bottom:10px;
+	background:white;
+}
+.contenedor-info h1, .form-editar h1{
+	background:#2F4DFF;
+	color:white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 150%;
+	height: 60px;
+	margin:0px;
+	margin-bottom:5%;
+}
+.form-editar h1{
+	font-size:  120%;
+}
+.info-empresa{
+	list-style:none;
+	padding:0px;
+	width:70%;
+	margin:0px auto;
+}
+.li{
+	width:100%;
+	height:30px;
+	display:block;
+	margin-bottom:2%;
+}
+.strong,.span{
+	display:block;
+	width:40%;
+	height:100%;
+	float:left;
+}
+.span{
+	width:60%;
+}
+.li-1{
+	height:135px;
+}
+.strong-logo{
+	float:none;
+	width:100%;
+	height:30px;
+	text-align:center;
+}
+.logoImagen{
+	width:90px;
+	height:90px;
+	display:block;
+	margin:0px auto;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+.logoImagen img{
+	width:100%;
+	height:100%;
+}
+#editarInfo{
+	display:block;
+	margin:0px auto;
+	margin-top:3%;
+	margin-bottom:3%;
+	width:100px;
+	height:30px;
+	background-color:#FF7C23;
+	color:white;
+	padding:5px;
+	border:none;
+	border-radius:5px;
+	font-size:15px;
+	cursor:pointer;
+}
+#editarInfo:hover{
+	background:#FFA385;
+}
+/*formulario para editar datos de la empresa*/
+.form-editar{
+	display:none;
+}
+.contenedor-controles{
+	width:90%;
+	height:auto;
+	margin:0px auto;
+	padding:10px;
+	margin-bottom:20px;
+}
+.label, .input{
+	width:30%;
+	display:block;
+	float:left;
+	margin-bottom:10px;
+}
+.input{
+	width:70%;
+	border:solid 1px #C8C8C8;
+	border-radius:5px; 
+}
+input[type="submit"],.cerrar{
+	width:50%;
+	height:30px;
+	display:block;
+	float:none;
+	margin:0px auto;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+.cerrar{
+	width:40%;
+}

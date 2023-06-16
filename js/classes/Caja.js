@@ -1,0 +1,11 @@
+class Caja{
+
+	constructor(){
+
+	}
+
+	atender(){
+
+	}
+
+}

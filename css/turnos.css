@@ -1,0 +1,163 @@
+/*Tabla para mostrar el ultimo turno llamado*/
+.contenedor-principal{
+	padding:0px 20px; 
+}
+.marco-tablaTurnos{
+	background:#000000;
+	border:solid 7px #A4A4A4;
+	margin: 0px auto;
+	margin-bottom: 30px;
+	text-align:center;
+	width: 70%;
+	min-width: 300px;
+	height: 20%;
+	min-height: 50px;
+}
+.contenedor-tablaTurnos{
+	display: flex;
+	height: auto;	
+}
+.columna-tablaTurnos{
+	flex-basis: 50%;
+}
+.tabla-turnosArriba, .tabla-turnosAbajo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+1
+}
+.tabla-turnosArriba{
+	font-size: 200%;
+	flex-basis: 70%;
+	color:white;
+	height: 70px;
+}
+.tabla-turnosAbajo{
+	color: red;
+	font-size: 800%;
+	flex-basis: 30%;
+	height: 150px;
+}
+
+.contenido{
+	display: flex;
+	margin: 0px auto;
+	width: 70%;
+	min-width: 300px;
+	height: 70%;
+}
+.contenido-izquierda,
+.contenido-derecha{
+	flex-basis: 50%;
+	height: auto;
+	padding: 0px;
+}
+.contenido-izquierda{
+	border: solid 1px white;
+	flex-basis: 60%;
+	padding: 10px;
+}
+.contenedor-logo{
+	display: flex;
+	margin-bottom: 10px;
+	padding: 0px;
+	width: 100%;
+	height: 20%;
+}
+.logo-empresa{
+	display: block;
+	flex-basis: 30%;
+}
+.logo-empresa img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nombre-empresa{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:white;
+	flex-basis: 70%;
+	line-height: 2;
+	margin: 0px;
+	margin-left: 10px;
+}
+.contenedor-video{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 80%;
+	border:none;
+	float:left;
+	background:none;
+}
+.contenedor-reproductor{
+	background:black;
+	padding-top: 10%;
+	width:100%;
+	height: 90%;
+}
+.contenedor-reproductor video,.contenedor-reproductor iframe{
+	width:100%;
+	height: 100%;
+}
+.contenido-derecha{
+	flex-basis: 40%;
+	margin-left: 20px;
+}
+.contenedor-turnos{
+	background:white;
+	width:100%;
+	height: 100%;
+	min-height: 300px;
+	border:none;
+}
+.tabla-turnos{
+	width: 100%;
+}
+.tabla-turnos th{
+	font-size: 150%;
+	color:black;
+	padding:25px;
+}
+.tabla-turnos td{
+	color:black;
+	font-size:40px;
+	padding-bottom:15px;
+	font-weight:600;
+}
+.primer-fila{
+	color:#6a1c32;
+}
+.caja,.no-caja{
+	width:25%;
+}
+.td-caja{
+	text-align:right;
+}
+.caja{
+	font-size:20px;
+}
+.no-caja{
+	text-align:left;
+	padding-left:20px;
+}
+.footer{
+	margin: 20px auto;
+	width: 70%;
+	min-width: 300px;
+	height: 10%;
+}
+.noticias{
+	width: 100%;
+	height:50px;
+	background:#b17a45;
+	color:white;
+	display:block;
+	padding:20px 10px;
+	marquee-direction:forward;
+	marquee-speed:slow;
+	marquee-play-count:infinite;
+	marquee-style:scroll;
+}

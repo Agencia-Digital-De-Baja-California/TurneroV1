@@ -1,0 +1,58 @@
+.contenedor-logo{
+	display: flex;
+}
+.logo-empresa{
+	flex-basis: 20%;
+}
+.logo-empresa img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nombre-empresa{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 80%;
+	font-size: 120%;	
+}
+.contenedor-caja{
+	width:40%;
+	min-width:450px;
+	height:auto;
+	margin:0px auto;
+	margin-top:5%;
+	padding:10px;
+	background:white;
+}
+.datos-turno{
+	color:black;
+	width:90%;
+	height:40px;
+	margin:0px auto;
+	display:block;
+	font-size:30px;
+	padding:5px;
+	text-align:center;
+}
+#solicitarTurno{
+	display:block;
+	margin:0px auto;
+	margin-top:2%;
+	width:30%;
+	min-width:170px;
+	height:50px;
+	background-color:#1073C4;
+	color:white;
+	font-size:20px;
+	cursor:pointer;
+	border:none;
+}
+.salir{
+	width:80px;
+	height:30px;
+	background:#F55457;
+	color:white;
+	font-size:20px;
+	border:none;
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* CSS Document */
+@media (max-width:500px){
+
+}	
+@media (max-width:630px){
+	.contenedor-tablaTurnos{
+		flex-direction: column;
+	}
+}	
+@media (max-width:750px){
+	.contenido{
+		flex-direction: column-reverse;
+	}
+	.contenido-derecha{
+		margin-left: 0px;
+	}
+}	
+@media (max-width:1204px){
+	
+}

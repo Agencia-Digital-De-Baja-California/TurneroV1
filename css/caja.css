@@ -1,0 +1,65 @@
+.contenedor-caja{
+	width:45%;
+	min-width:350px;
+	height:auto;
+	margin:0px auto;
+	margin-top:5%;
+	padding:10px;
+	background:white;
+}
+.contenedor-caja h1{
+	background: #2F4DFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 30px;
+	height: 50px;
+	margin: 0px;
+	margin-bottom: 10%;
+	text-align: center;
+}
+.datos-usuario,.datos-turno{
+	color:black;;
+	width:100%;
+	height:40px;
+	margin:0px auto;
+	display:block;
+	font-size:30px;
+	padding:5px;
+	margin-bottom:3%;
+	text-align:center;
+}
+.datos-turno{
+}
+#atender{
+	display:block;
+	margin:0px auto;
+	margin-top:5%;
+	width:30%;
+	height:50px;
+	background-color:#1073C4;
+	color:white;
+	font-size:20px;
+	cursor:pointer;
+	border:none;
+}
+.salir{
+	text-align:center;
+	display:block;
+	padding:6px;
+	width:80px;
+	height:30px;
+	background:#F55457;
+	color:white;
+	font-size:20px;
+	border:none;
+	cursor:pointer;
+}
+#mensajes{
+	display:block;
+	width:100%;
+	height:25px;
+	margin-top:2%;
+	text-align:center;
+}
