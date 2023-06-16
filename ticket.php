@@ -38,7 +38,7 @@ class CustomPDF extends FPDF
     function Header()
     {
         // Logo
-        $this->Image('C:\xampp3\htdocs\turnero\img\corazon-pordelante.png', -1, 1, 20, 0); // Ajusta los parámetros según las dimensiones y la ubicación de tu logo
+        $this->Image('..\turnero\img\corazon-pordelante.png', -1, 1, 20, 0); // Ajusta los parámetros según las dimensiones y la ubicación de tu logo
 
         // Fecha
         $this->SetFont('Arial', 'B', 11);
