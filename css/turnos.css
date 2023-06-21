@@ -24,7 +24,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-1
+
 }
 .tabla-turnosArriba{
 	font-size: 200%;
@@ -56,17 +56,18 @@
 	border: solid 1px white;
 	flex-basis: 60%;
 	padding: 10px;
+	background-image: url("https://gestion.bajacalifornia.gob.mx/image_urbem/img/fondo.png");
 }
 .contenedor-logo{
 	display: flex;
 	margin-bottom: 10px;
-	padding: 0px;
+	padding: -4px;
 	width: 100%;
 	height: 20%;
 }
 .logo-empresa{
 	display: block;
-	flex-basis: 30%;
+	flex-basis: 70%;
 }
 .logo-empresa img{
 	display: block;
@@ -82,6 +83,8 @@
 	line-height: 2;
 	margin: 0px;
 	margin-left: 10px;
+	/* background-image: url("https://gestion.bajacalifornia.gob.mx/image_urbem/img/fondo.png"); */
+	
 }
 .contenedor-video{
 	display: flex;
@@ -106,13 +109,19 @@
 	flex-basis: 40%;
 	margin-left: 20px;
 }
-.contenedor-turnos{
-	background:white;
-	width:100%;
+.contenedor-turnos {
+	background-image: url("https://gestion.bajacalifornia.gob.mx/image_urbem/img/fondo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
 	height: 100%;
 	min-height: 300px;
-	border:none;
-}
+	border: none;
+  }
+  
+  
+  
 .tabla-turnos{
 	width: 100%;
 }

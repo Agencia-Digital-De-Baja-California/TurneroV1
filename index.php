@@ -26,9 +26,9 @@
                     <li class="menu-li"><a href="login.php">Login</a></li>
                     <li class="menu-li"><a href="registrar_usuarios.php">Registrar usuario</a></li>
                     <li class="menu-li"><a href="registrar_cajas.php">Registrar caja</a></li>
-                    <li class="menu-li"><a href="info_empresa.php">Informacionde la empresa</a></li>
+                    <li class="menu-li"><a href="info_empresa.php">Informacion de la empresa</a></li>
                     <li class="menu-li"><a href="#" id="reset">Resetear turnos</a></li>
-					<li class="menu-li"><a href="ticket.php">Generar turno con ticket</a></li>
+					<!-- <li class="menu-li"><a href="ticket.php">Generar turno con ticket</a></li> -->
 
                 </ul>
 

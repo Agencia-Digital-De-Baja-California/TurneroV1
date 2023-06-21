@@ -1,8 +1,8 @@
 .contenedor-menu{
-	background:white;
+	background:gray;
 	margin: 0px auto;
 	width:45%;
-	min-width:350px;
+	min-width:150px;
 	height:auto;
 	padding-bottom: 20px;
 }

@@ -68,11 +68,15 @@
                 <input type="submit" name="solicitarTurno" id="solicitarTurno" value="Solicitar Turno">
             	<input type="hidden" name="turno" id="noTurno" value="">
 
-				<button class="menu-li" onclick="window.location.href='ticket.php'">Imprime ticket</button>
+				<button class="menu-li" onclick=" window.location.href =('ticket.php')">Imprime ticket</button>
 
             </div>
         
         </div>
+
+		<script>
+
+</script>
         
         <script src="js/jquery-3.1.0.min.js"></script>
 		<script src="js/funcionesGenerales.js"></script>

@@ -66,7 +66,7 @@
 
                         </div>
                         <div class="columna-tablaTurnos">
-                            <div class="tabla-turnosArriba">Caja</div>  
+                            <div class="tabla-turnosArriba">Caja/Modulo</div>  
                             <div class="tabla-turnosAbajo" id="verCaja"><?php echo $caja; ?></div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
             
             </header>
 
-            <section class="contenido">
+            <section class="contenido">      
                         
                 <div class="contenido-izquierda">
 
@@ -86,9 +86,8 @@
                             <img src="<?php echo $info['logo'];?>">
                         
                         </div>
-                        
-                        <h1 class="nombre-empresa"><?php echo $info['nombre'];?> Bienvenido</h1>
-
+                        <!-- <img src="7<?php echo 'https://gestion.bajacalifornia.gob.mx/image_urbem/img/LOGOS_DEPENDENCIAS/AGENCIA_DIGITAL/Convivencia_Agencia_Digital.png"';?>"> -->
+                      
                     </header>
 
                     <div class="contenedor-video">
@@ -152,66 +151,76 @@
         		
             </section><!--contenido-->
             
-            <footer class="footer">
-                
-                    <marquee class="noticias">Agencia Digital Del Gobierno del estado |¡Baja California Se vuelve digital! | Obten tu constancia de antecedentes penales en linea</marquee>
+           
 
-            </footer>
+		
 			
+            <footer class="footer">
+            <?php
 
-<!--			
-			<footer class="footer">
-
-<?php
-
-$RSS = new LectorRSS ("http://feeds.feedburner.com/aporrea");
 class LectorRSS {
-var $url;
-var $data;
-function LectorRSS ($url){
-$this->url;
-$this->data = implode ("", file ($url));
+    private $url;
+    private $data;
+
+    public function __construct($url) {
+        $this->url = $url;
+        $this->data = implode("", file($url));
+    }
+
+    public function obtener_items() {
+        preg_match_all("/<item.*>.*<\/item>/xsmUi", $this->data, $matches);
+        $items = array();
+
+        foreach ($matches[0] as $match) {
+            $items[] = new RssItem($match);
+        }
+
+        return $items;
+    }
 }
-function obtener_items (){
-preg_match_all ("/<item .*>.*<\/item>/xsmUi", $this->data, $matches);
-$items = array ();
-foreach ($matches[0] as $match){
-$items[] = new RssItem ($match);
-}
-return $items;
-}
-}
+
 class RssItem {
-var $title, $url;
-function RssItem ($xml){
-$this->populate ($xml);
+    private $title;
+    private $url;
+
+    public function __construct($xml) {
+        $this->populate($xml);
+    }
+
+    private function populate($xml) {
+        preg_match("/<title>(.*)<\/title>/xsmUi", $xml, $matches);
+        $this->title = $matches[1];
+
+        preg_match("/<link>(.*)<\/link>/xsmUi", $xml, $matches);
+        $this->url = $matches[1];
+    }
+
+    public function obtener_titulo() {
+        return $this->title;
+    }
+
+    public function obtener_url() {
+        return $this->url;
+    }
 }
-function populate ($xml){
-preg_match ("/<title> (.*) <\/title>/xsmUi", $xml, $matches);
-$this->title = $matches[1];
-preg_match ("/<link> (.*) <\/link>/xsmUi", $xml, $matches);
-$this->url = $matches[1];
+
+$RSS = new LectorRSS("http://feeds.feedburner.com/aporrea");
+
+echo '<div>';
+echo '<marquee class="noticias">';
+
+foreach ($RSS->obtener_items() as $item) {
+    printf('<a target="_BLANK" href="%s">%s</a>. ', $item->obtener_url(), $item->obtener_titulo());
 }
-function obtener_titulo (){
-return $this->title;
-}
-function obtener_url (){
-return $this->url;
-}
-}
-echo "<div>";
-echo "<marquee behavior='Scroll' class='noticias' behavior='alternate'>";
-foreach ($RSS->obtener_items () as $item){
-printf ('<a target="_BLANK" href="%s">%s. </a>', $item->obtener_url (), $item->obtener_titulo ());
-}
-echo "</marquee>";
-echo "</div>";
+
+echo '</marquee>';
+echo '</div>';
 ?>
 
+
+    
 </footer>
-			
--->			
-			
+
 			
         
         </div><!--contenedor principal-->
